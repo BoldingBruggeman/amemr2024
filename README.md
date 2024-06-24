@@ -26,7 +26,19 @@ We will be editing text files (yaml files and Python scripts) with model configu
 
    The above command installs pre-compiled versions of [gotm](https://gotm.net) and [fabmos](https://github.com/BoldingBruggeman/fabmos/wiki) that includes reference versions of [ERSEM](http://ersem.com), [ECOSMO](https://doi.org/10.5194/gmd-15-3901-2022), [PISCES](https://www.pisces-community.org/), [iHAMOCC](https://doi.org/10.5194/gmd-13-2393-2020) and [MOPS](https://doi.org/10.5194/gmd-8-2929-2015), among others.
 
-## 2. Get forcing (global transport matrices)
+### Test your installation
 
-1. Download the MITgcm 2.8° circulation (MITgcm_2.8deg) from [Samar Khatiwala](http://kelvin.earth.ox.ac.uk/spk/Research/TMM/TransportMatrixConfigs/)
+Open a terminal window (on Windows, use the "Anaconda prompt" from the start menu), and in there, type:
+
+```
+conda activate amemr
+gotm --version
+multiplot --version
+```
+
+These three commands should complete without errors.
+
+## Get transport matrices to drive global simulations
+
+1. Download the MITgcm 2.8° circulation (`MITgcm_2.8deg`) from [Samar Khatiwala](http://kelvin.earth.ox.ac.uk/spk/Research/TMM/TransportMatrixConfigs/)
 2. Extract this tar file to a directory on disk (remember where you put it; we’ll use it from a terminal later). On Windows, you may get error message such as "A required privilege is not held by the client". This can be ignored - you can skip the two affected files.
