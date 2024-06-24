@@ -1,6 +1,6 @@
 # AMEMR 2024 modelling workshop
 
-We will work in a terminal window while installing necessary files and running the offline simulator.  
+We will work in a terminal window while installing necessary files and running the models.
 On Windows, use the "Anaconda prompt" from the start menu (instructions on how to install that below).
 
 We will be editing text files (yaml files and Python scripts) with model configurations. This can be done with many different editors, e.g., [Visual Studio Code](https://code.visualstudio.com/), Notepad on Windows, `vi` on Linux/Mac. We recommend using one you are already familiar with.
@@ -18,13 +18,13 @@ We will be editing text files (yaml files and Python scripts) with model configu
    conda create -n amemr -c conda-forge -y gotm pyncview
    ```
 
-   [NB the above command will be updated to also install `fabmos`, which we will use for the last part of the workshop. At the momment that does not yet work because fabmos is not yet available from conda-forge]
+   [NB the above command will be updated to also install `fabmos`, which we will use for the last part of the workshop. At the moment, that does not yet work because fabmos is not yet available from conda-forge]
 
    If you experience any issue with the above, we recommend you first execute `conda update conda` to ensure your conda is up to date.
    Should this fail because of lack of permissions, we recommend you [install Miniconda](https://docs.anaconda.com/miniconda/miniconda-install/).
    After you have an up-to-date conda, retry the `conda create ...` command.
 
-   The above command installs pre-compiled versions of [gotm](https://gotm.net) and [fabmos](https://github.com/BoldingBruggeman/fabmos/wiki) that includes reference versions of [ERSEM](https://ersem.com), [ECOSMO](https://doi.org/10.5194/gmd-15-3901-2022), [PISCES](https://www.pisces-community.org/), [iHAMOCC](https://doi.org/10.5194/gmd-13-2393-2020) and [MOPS](https://doi.org/10.5194/gmd-8-2929-2015), among others.
+   The above command installs pre-compiled versions of [gotm](https://gotm.net) and [fabmos](https://github.com/BoldingBruggeman/fabmos/wiki) that includes reference versions of [ERSEM](http://ersem.com), [ECOSMO](https://doi.org/10.5194/gmd-15-3901-2022), [PISCES](https://www.pisces-community.org/), [iHAMOCC](https://doi.org/10.5194/gmd-13-2393-2020) and [MOPS](https://doi.org/10.5194/gmd-8-2929-2015), among others.
 
 ## 2. Get forcing (global transport matrices)
 
