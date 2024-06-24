@@ -24,7 +24,7 @@ We will be editing text files (yaml files and Python scripts) with model configu
    Should this fail because of lack of permissions, we recommend you [install Miniconda](https://docs.anaconda.com/miniconda/miniconda-install/).
    After you have an up-to-date conda, retry the `conda create ...` command.
 
-   The above command installs pre-compiled versions of [gotm](https://gotm.net) and [fabmos](https://github.com/BoldingBruggeman/fabmos/wiki) that includes reference versions of [ERSEM](http://ersem.com), [ECOSMO](https://doi.org/10.5194/gmd-15-3901-2022), [PISCES](https://www.pisces-community.org/), [iHAMOCC](https://doi.org/10.5194/gmd-13-2393-2020) and [MOPS](https://doi.org/10.5194/gmd-8-2929-2015), among others.
+   The above command installs pre-compiled versions of [gotm](https://gotm.net) and [fabmos](https://github.com/BoldingBruggeman/fabmos/wiki) that includes reference versions of [ERSEM](http://ersem.com), [ECOSMO](https://doi.org/10.5194/gmd-15-3901-2022), [PISCES](https://www.pisces-community.org/), [iHAMOCC](https://doi.org/10.5194/gmd-13-2393-2020), [ERGOM](https://ergom.net/), and [MOPS](https://doi.org/10.5194/gmd-8-2929-2015), among others.
 
 ### Test your installation
 
