@@ -20,9 +20,11 @@ jobs:
         with:
           auto-update-conda: true
           python-version: ${{ matrix.python-version }}
+          channels: conda-forge
+          activate-environment: amemr
       - name: Install packages
         run: |
-          conda create -n amemr -c conda-forge -y gotm pyncview
+          conda install -c conda-forge -y gotm pyncview
       - name: Test programs
         run: |
           conda activate amemr
