@@ -22,7 +22,7 @@ jobs:
           python-version: ${{ matrix.python-version }}
           channels: conda-forge
           activate-environment: amemr
-      - name: Install packages
+      - name: Install GOTM and PyNcView
         run: |
           conda install -c conda-forge -y gotm pyncview
       - name: Test programs
@@ -30,3 +30,10 @@ jobs:
           conda activate amemr
           gotm --version
           multiplot --version
+      - name: Install pygetm and fabmos
+        run: |
+          conda install -n amemr -c conda-forge -y fabmos
+      - name: Test fabmos import
+        run: |
+          conda activate amemr
+          python -c "import fabmos"
