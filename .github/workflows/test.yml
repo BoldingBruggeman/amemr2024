@@ -32,7 +32,7 @@ jobs:
           multiplot --version
       - name: Install pygetm and fabmos
         run: |
-          conda install -n amemr -c conda-forge -y fabmos
+          conda install -n amemr -c conda-forge -c bolding-bruggeman -y fabmos
       - name: Test fabmos import
         run: |
           conda activate amemr

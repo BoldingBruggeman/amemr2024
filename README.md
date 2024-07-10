@@ -42,8 +42,18 @@ If you *do not* have Anaconda, [install Miniconda](https://docs.anaconda.com/min
 
 ### Step 3. Install 3D offline simulator
 
-[instructions to follow]
+1. Install FABM Offline Simulator in your isolated `amemr` environment.
+   To do this, open a terminal window (on Windows, use the "Anaconda prompt" from the start menu) and type:
+   ```
+   conda install -n amemr -c conda-forge -c bolding-bruggeman -y fabmos
+   ```
 
+2. Test your installation by running the following in a terminal window:
+   ```
+   conda activate amemr
+   python -c "import fabmos"
+   ```
+   These commands should complete without errors.
 
 ## Get transport matrices to drive global simulations
 
