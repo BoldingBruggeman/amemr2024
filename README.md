@@ -40,7 +40,7 @@ If you *do not* have Anaconda, [install Miniconda](https://docs.anaconda.com/min
    ```
    These three commands should complete without errors.
 
-### Step 3. Install 3D offline simulator
+### Step 3. Install the 3D offline simulator
 
 1. Install FABM Offline Simulator in your isolated `amemr` environment.
    To do this, open a terminal window (on Windows, use the "Anaconda prompt" from the start menu) and type:

@@ -43,7 +43,7 @@ jobs:
           python -c "import fabmos"
       - name: Download and extract TMM setup
         run: |
-          wget -q http://kelvin.earth.ox.ac.uk/spk/Research/TMM/TransportMatrixConfigs/MITgcm_2.8deg.tar
+          curl http://kelvin.earth.ox.ac.uk/spk/Research/TMM/TransportMatrixConfigs/MITgcm_2.8deg.tar -o MITgcm_2.8deg.tar
           tar -xvf MITgcm_2.8deg.tar
       - name: Run TMM setup in serial
         run: |
