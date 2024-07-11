@@ -13,8 +13,12 @@ jobs:
         run:
           shell: bash -el {0}
       steps:
-      - name: Clone
+      - name: Clone fabmos repo
         uses: actions/checkout@v4
+        with:
+          repository: BoldingBruggeman/fabmos
+          submodules: recursive
+          path: fabmos
       - name: Set up conda
         uses: conda-incubator/setup-miniconda@v3
         with:
@@ -37,3 +41,15 @@ jobs:
         run: |
           conda activate amemr
           python -c "import fabmos"
+      - name: Download and extract TMM setup
+        run: |
+          wget -q http://kelvin.earth.ox.ac.uk/spk/Research/TMM/TransportMatrixConfigs/MITgcm_2.8deg.tar
+          tar -xvf MITgcm_2.8deg.tar
+      - name: Run TMM setup in serial
+        run: |
+          cd MITgcm_2.8deg
+          python ../fabmos/examples/tmm/tracer.py --stop_time="2000-02-01 00:00:00"
+      - name: Run TMM setup in parallel
+        run: |
+          cd MITgcm_2.8deg
+          mpiexec -n 2 python ../fabmos/examples/tmm/tracer.py --stop_time="2000-02-01 00:00:00"
